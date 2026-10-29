@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "Crear cuenta";
+    Layout = "~/Views/Shared/_LayoutAuth.cshtml";
+}
+
+<div class="auth-wrapper">
+
+    <!-- Panel informativo -->
+    <section class="auth-panel">
+        <div class="logo-grande">+</div>
+        <h1>Crea tu cuenta</h1>
+        <p>Únete a CliniAI y accede a tu espacio según tu rol.</p>
+        <ul>
+            <li>✔ Pacientes: consulta tus citas</li>
+            <li>✔ Médicos: gestiona tus consultas</li>
+            <li>✔ Acceso seguro con roles</li>
+        </ul>
+    </section>
+
+    <!-- Formulario -->
+    <section class="auth-form">
+        <h2>Registro</h2>
+        <p class="subtitulo">Completa los datos para crear tu cuenta.</p>
+
+        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+        <form asp-controller="Account" asp-action="Register" method="post" id="formRegistro">
+
+            <div class="form-group">
+                <label for="Nombre">Nombre completo</label>
+                <input type="text" id="Nombre" name="Nombre" class="form-control"
+                       placeholder="Ej. Ana María López" maxlength="100" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Email">Correo electrónico</label>
+                <input type="email" id="Email" name="Email" class="form-control"
+                       placeholder="usuario@correo.com" required />
+            </div>
+
+            <div class="form-group">
+                <label for="Rol">Tipo de cuenta</label>
+                <select id="Rol" name="Rol" class="form-control" required>
+                    <option value="">Selecciona un rol...</option>
+                    <option value="Paciente">Paciente</option>
+                    <option value="Médico">Médico</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="Password">Contraseña</label>
+                    <input type="password" id="Password" name="Password" class="form-control"
+                           placeholder="Mínimo 6 caracteres" minlength="6" required />
+                </div>
+                <div class="form-group">
+                    <label for="ConfirmPassword">Confirmar contraseña</label>
+                    <input type="password" id="ConfirmPassword" name="ConfirmPassword" class="form-control"
+                           placeholder="Repite la contraseña" minlength="6" required />
+                </div>
+            </div>
+
+            <span class="text-error" id="errorClave" style="display:none;">Las contraseñas no coinciden.</span>
+
+            <button type="submit" class="btn btn-primary btn-block">Crear cuenta</button>
+        </form>
+
+        <p class="enlace-alterno">
+            ¿Ya tienes cuenta?
+            <a asp-controller="Account" asp-action="Login">Inicia sesión</a>
+        </p>
+    </section>
+</div>
+
+@section Scripts {
+    <script>
+        // Validación en pantalla: las contraseñas deben coincidir
+        document.getElementById('formRegistro').addEventListener('submit', function (e) {
+            var clave = document.getElementById('Password').value;
+            var confirmar = document.getElementById('ConfirmPassword').value;
+            var error = document.getElementById('errorClave');
+            if (clave !== confirmar) {
+                e.preventDefault();
+                error.style.display = 'block';
+            } else {
+                error.style.display = 'none';
+            }
+        });
+    </script>
+}

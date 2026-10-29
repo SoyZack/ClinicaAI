@@ -1,0 +1,102 @@
+@{
+    ViewData["Title"] = "Inicio";
+
+    // Los totales los puede enviar el controlador con ViewBag.
+    // Si todavía no existen, se muestra 0 para que la vista no falle.
+    var totalPacientes = ViewBag.TotalPacientes ?? 0;
+    var totalMedicos   = ViewBag.TotalMedicos ?? 0;
+    var citasHoy       = ViewBag.CitasHoy ?? 0;
+    var totalConsultas = ViewBag.TotalConsultas ?? 0;
+
+    var nombre = User.Identity?.Name ?? "Invitado";
+    var esAdminOMedico = User.IsInRole("Administrador") || User.IsInRole("Médico");
+}
+
+<!-- Bienvenida -->
+<section class="welcome">
+    <div>
+        <h1>¡Hola, @nombre!</h1>
+        <p>Bienvenido al panel principal de CliniAI.</p>
+    </div>
+    <span class="fecha">@DateTime.Now.ToString("dddd, dd 'de' MMMM 'de' yyyy", new System.Globalization.CultureInfo("es-SV"))</span>
+</section>
+
+<!-- Tarjetas de resumen -->
+<section class="grid grid-4">
+    <div class="stat-card">
+        <div class="icono-stat">🧑‍🤝‍🧑</div>
+        <div>
+            <div class="valor">@totalPacientes</div>
+            <div class="etiqueta">Pacientes registrados</div>
+        </div>
+    </div>
+    <div class="stat-card medio">
+        <div class="icono-stat">🩺</div>
+        <div>
+            <div class="valor">@totalMedicos</div>
+            <div class="etiqueta">Médicos activos</div>
+        </div>
+    </div>
+    <div class="stat-card marino">
+        <div class="icono-stat">📅</div>
+        <div>
+            <div class="valor">@citasHoy</div>
+            <div class="etiqueta">Citas para hoy</div>
+        </div>
+    </div>
+    <div class="stat-card">
+        <div class="icono-stat">📋</div>
+        <div>
+            <div class="valor">@totalConsultas</div>
+            <div class="etiqueta">Consultas realizadas</div>
+        </div>
+    </div>
+</section>
+
+<div class="grid grid-2" style="margin-top:1.5rem;">
+
+    <!-- Accesos rápidos -->
+    <section class="card">
+        <div class="card-header">
+            <h2>Accesos rápidos</h2>
+        </div>
+        <div class="grid" style="gap:.75rem;">
+            @if (esAdminOMedico)
+            {
+                <a class="acceso-rapido" asp-controller="Pacientes" asp-action="Index">
+                    <span class="icono">🧑‍🤝‍🧑</span> Gestionar pacientes
+                </a>
+                <a class="acceso-rapido" asp-controller="Medicos" asp-action="Index">
+                    <span class="icono">🩺</span> Gestionar médicos
+                </a>
+                <a class="acceso-rapido" asp-controller="Citas" asp-action="Index">
+                    <span class="icono">📅</span> Ver citas
+                </a>
+                <a class="acceso-rapido" asp-controller="Consultas" asp-action="Index">
+                    <span class="icono">📋</span> Ver consultas
+                </a>
+            }
+            else
+            {
+                <p class="vacio">Aquí aparecerán los accesos disponibles para tu rol.</p>
+            }
+        </div>
+    </section>
+
+    <!-- Próximas citas -->
+    <section class="card">
+        <div class="card-header">
+            <h2>Próximas citas</h2>
+            @if (esAdminOMedico)
+            {
+                <a class="btn btn-outline btn-sm" asp-controller="Citas" asp-action="Index">Ver todas</a>
+            }
+        </div>
+
+        @* Cuando el equipo de backend envíe ViewBag.ProximasCitas se puede recorrer aquí.
+           Por ahora se muestra el estado vacío. *@
+        <div class="vacio">
+            <p>No hay citas próximas para mostrar.</p>
+        </div>
+    </section>
+</div>

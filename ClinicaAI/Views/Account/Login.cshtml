@@ -1,0 +1,65 @@
+@model ClinicaAI.Models.ViewModels.LoginViewModel
+
+@{
+    ViewData["Title"] = "Iniciar sesión";
+    Layout = "~/Views/Shared/_LayoutAuth.cshtml";
+}
+
+<div class="auth-wrapper">
+
+    <!-- Panel informativo -->
+    <section class="auth-panel">
+        <div class="logo-grande">+</div>
+        <h1>CliniAI</h1>
+        <p>Plataforma de gestión clínica con apoyo de inteligencia artificial.</p>
+        <ul>
+            <li>✔ Administra pacientes, médicos y citas</li>
+            <li>✔ Registra consultas médicas</li>
+            <li>✔ Apoyo de IA en el flujo de atención</li>
+        </ul>
+    </section>
+
+    <!-- Formulario -->
+    <section class="auth-form">
+        <h2>Bienvenido de nuevo</h2>
+        <p class="subtitulo">Ingresa tus credenciales para continuar.</p>
+
+        @* Muestra errores que devuelva el controlador (ModelState.AddModelError) *@
+        <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+
+        @if (TempData["Exito"] != null)
+        {
+            <div class="alert alert-success">@TempData["Exito"]</div>
+        }
+
+        <form asp-controller="Account" asp-action="Login" method="post">
+            <input type="hidden" name="ReturnUrl" value="@Context.Request.Query["returnUrl"]" />
+
+            <div class="form-group">
+                <label for="Email">Correo electrónico</label>
+                <input type="email" id="Email" name="Email" class="form-control"
+                       placeholder="usuario@correo.com" required autofocus />
+            </div>
+
+            <div class="form-group">
+                <label for="Password">Contraseña</label>
+                <input type="password" id="Password" name="Password" class="form-control"
+                       placeholder="••••••••" required />
+            </div>
+
+            <div class="form-group">
+                <label class="form-check">
+                    <input type="checkbox" name="Recordarme" value="true" />
+                    Recordarme en este equipo
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
+        </form>
+
+        <p class="enlace-alterno">
+            ¿No tienes cuenta?
+            <a asp-controller="Account" asp-action="Register">Regístrate aquí</a>
+        </p>
+    </section>
+</div>
