@@ -1,0 +1,23 @@
+@model ClinicaAI.Models.ViewModels.CitaForm
+@{
+    ViewData["Title"] = "Registrar cita";
+}
+<div class="page-heading"><div><p class="eyebrow">Agenda</p><h1>Registrar cita</h1><p>Selecciona el paciente, el médico y el horario de atención.</p></div><a asp-action="Index" class="btn btn-outline-secondary">Volver a la agenda</a></div>
+<section class="surface form-surface">
+    @if (Model.Pacientes.Count == 0 || Model.Medicos.Count == 0)
+    {
+        <div class="alert alert-info">Para agendar necesitas pacientes registrados y médicos activos con una especialidad. <a asp-controller="Pacientes" asp-action="Crear">Registrar paciente</a> · <a asp-controller="Medicos" asp-action="Crear">Registrar médico</a></div>
+    }
+    <form asp-action="Crear" method="post">
+        <div asp-validation-summary="All" class="text-danger" role="alert"></div>
+        <div class="form-grid">
+            <div class="form-group"><label asp-for="IdPaciente"></label><select asp-for="IdPaciente" asp-items="Model.Pacientes" class="form-select"><option value="">Seleccione un paciente</option></select><span asp-validation-for="IdPaciente" class="text-danger"></span></div>
+            <div class="form-group"><label asp-for="IdMedico"></label><select asp-for="IdMedico" asp-items="Model.Medicos" class="form-select"><option value="">Seleccione un médico</option></select><span asp-validation-for="IdMedico" class="text-danger"></span></div>
+            <div class="form-group"><label asp-for="FechaHora"></label><input asp-for="FechaHora" type="datetime-local" asp-format="{0:yyyy-MM-ddTHH:mm}" class="form-control" /><span asp-validation-for="FechaHora" class="text-danger"></span></div>
+            <div class="form-group"><label asp-for="MotivoConsulta"></label><textarea asp-for="MotivoConsulta" class="form-control" rows="3"></textarea><span asp-validation-for="MotivoConsulta" class="text-danger"></span></div>
+        </div><div class="form-actions"><button class="btn btn-primary" type="submit">Registrar cita</button><a asp-action="Index" class="btn btn-outline-secondary">Cancelar</a></div>
+    </form>
+</section>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

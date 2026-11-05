@@ -1,0 +1,20 @@
+@model ClinicaAI.Models.ViewModels.MedicoForm
+@{
+    ViewData["Title"] = Model.IdMedico == 0 ? "Registrar médico" : "Editar médico";
+}
+<div class="page-heading"><div><p class="eyebrow">Medicos</p><h1>@ViewData["Title"]</h1><p>Completa la información y guarda los cambios.</p></div><a asp-action="Index" class="btn btn-outline-secondary">Volver al listado</a></div>
+<section class="surface form-surface">
+    @if (Model.Especialidades.Count == 0)
+    {
+        <div class="alert alert-warning" role="alert">No hay especialidades registradas. <a asp-controller="Especialidades" asp-action="Crear">Crea la primera especialidad</a> antes de guardar un médico.</div>
+    }
+    <form asp-action="Guardar" method="post">
+        <input asp-for="IdMedico" type="hidden" />
+        <div asp-validation-summary="All" class="text-danger" role="alert"></div>
+        <div class="form-grid"><div class="form-group"><label asp-for="Nombre"></label><input asp-for="Nombre" class="form-control" maxlength="100" /><span asp-validation-for="Nombre" class="text-danger"></span></div><div class="form-group"><label asp-for="Apellido"></label><input asp-for="Apellido" class="form-control" maxlength="100" /><span asp-validation-for="Apellido" class="text-danger"></span></div><div class="form-group"><label asp-for="IdEspecialidad"></label><select asp-for="IdEspecialidad" asp-items="Model.Especialidades" class="form-select"><option value="">Seleccione una especialidad</option></select><span asp-validation-for="IdEspecialidad" class="text-danger"></span></div><div class="form-group"><label asp-for="Telefono"></label><input asp-for="Telefono" class="form-control" maxlength="9" inputmode="numeric" data-format="telefono" /><span asp-validation-for="Telefono" class="text-danger"></span></div><div class="form-group"><label asp-for="Email"></label><input asp-for="Email" type="email" class="form-control" /><span asp-validation-for="Email" class="text-danger"></span></div><div class="form-group"><label asp-for="Estado"></label><select asp-for="Estado" class="form-select"><option value="activo">Activo</option><option value="inactivo">Inactivo</option></select><span asp-validation-for="Estado" class="text-danger"></span></div></div>
+        <div class="form-actions"><button class="btn btn-primary" type="submit">Guardar médico</button><a asp-action="Index" class="btn btn-outline-secondary">Cancelar</a></div>
+    </form>
+</section>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

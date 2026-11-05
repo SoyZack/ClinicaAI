@@ -1,0 +1,54 @@
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace ClinicaAI.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class IaChatController : ControllerBase
+    {
+        private readonly GeminiIaService _geminiIaService;
+
+        public IaChatController(GeminiIaService geminiIaService)
+        {
+            _geminiIaService = geminiIaService;
+        }
+
+        // POST: api/IaChat/Preguntar
+        [HttpPost("Preguntar")]
+        public async Task<IActionResult> PreguntarAIChat([FromBody] ChatRequestDto request)
+        {
+            try
+            {
+                if (request == null || string.IsNullOrWhiteSpace(request.Mensaje))
+                {
+                    return BadRequest(new { exito = false, mensaje = "El mensaje no puede estar vacio." });
+                }
+
+                // Llamar al servicio que se comunica con Gemini 
+                string respuestaIA = await _geminiIaService.ObtenerRespuestaTriajeAsync(request.Mensaje);
+
+                return Ok(new
+                {
+                    exito = true,
+                    remitente = "IA",
+                    repuesta = respuestaIA
+                });
+            }
+            catch (Exception ex)
+            {
+                // Manejar errores y devolver un mensaje de error
+                return StatusCode(500, new
+                {
+                    exito = false,
+                    mensaje = "Ocurrió un error al procesar la solicitud.",
+                    detalle = ex.Message
+                });
+            }
+        }
+
+        public class ChatRequestDto
+        {
+            public string Mensaje { get; set; } = null!;
+        }
+    }
+}

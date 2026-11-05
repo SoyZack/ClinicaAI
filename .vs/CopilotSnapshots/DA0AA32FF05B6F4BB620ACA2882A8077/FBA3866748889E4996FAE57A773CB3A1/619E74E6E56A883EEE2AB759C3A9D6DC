@@ -1,0 +1,139 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using ClinicaAI.Models.DB;
+using Microsoft.EntityFrameworkCore;
+using System.Text.RegularExpressions;
+
+namespace ClinicaAI.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class IaChatController : ControllerBase
+    {
+        private readonly GeminiIaService _geminiIaService;
+        private readonly ClinicaAiContext _context;
+        private readonly ILogger<IaChatController> _logger;
+
+        public IaChatController(
+            GeminiIaService geminiIaService,
+            ClinicaAiContext context,
+            ILogger<IaChatController> logger)
+        {
+            _geminiIaService = geminiIaService;
+            _context = context;
+            _logger = logger;
+        }
+
+        // POST: api/IaChat/Preguntar
+        [HttpPost("Preguntar")]
+        public async Task<IActionResult> PreguntarAIChat([FromBody] ChatRequestDto request)
+        {
+            try
+            {
+                if (request == null || string.IsNullOrWhiteSpace(request.Mensaje))
+                {
+                    return BadRequest(new { exito = false, mensaje = "El mensaje no puede estar vacio." });
+                }
+
+                var conversacion = request.IdConversacion.HasValue
+                    ? await _context.Conversaciones.FirstOrDefaultAsync(c => c.IdConversacion == request.IdConversacion.Value)
+                    : null;
+
+                if (request.IdConversacion.HasValue && conversacion == null)
+                {
+                    return NotFound(new { exito = false, mensaje = "La conversación no existe." });
+                }
+
+                if (conversacion == null)
+                {
+                    var canal = await _context.CanalesComunicacions
+                        .FirstOrDefaultAsync(c => c.Nombre == "Chatbot Web");
+
+                    if (canal == null)
+                    {
+                        return StatusCode(500, new { exito = false, mensaje = "No existe un canal configurado para el chatbot." });
+                    }
+
+                    conversacion = new Conversacione
+                    {
+                        IdCanal = canal.IdCanal,
+                        IdPaciente = request.IdPaciente,
+                        IdentificadorUsuarioCanal = string.IsNullOrWhiteSpace(request.IdentificadorUsuario)
+                            ? Guid.NewGuid().ToString("N")
+                            : request.IdentificadorUsuario.Trim(),
+                        Estado = "bot",
+                        FechaInicio = DateTime.Now
+                    };
+
+                    _context.Conversaciones.Add(conversacion);
+                }
+
+                string respuestaIA = await _geminiIaService.ObtenerRespuestaTriajeAsync(request.Mensaje.Trim());
+                var prioridad = ObtenerPrioridad(respuestaIA);
+
+                conversacion.Mensajes.Add(new Mensaje
+                {
+                    Emisor = "paciente",
+                    ContenidoTexto = request.Mensaje.Trim(),
+                    TipoContenido = "texto",
+                    FechaEnvio = DateTime.Now
+                });
+
+                conversacion.Mensajes.Add(new Mensaje
+                {
+                    Emisor = "bot",
+                    ContenidoTexto = respuestaIA,
+                    TipoContenido = "texto",
+                    FechaEnvio = DateTime.Now
+                });
+
+                conversacion.TriajesChatbots.Add(new TriajesChatbot
+                {
+                    IdPaciente = request.IdPaciente ?? conversacion.IdPaciente,
+                    SintomasReportados = request.Mensaje.Trim(),
+                    NivelPrioridad = prioridad,
+                    RecomendacionBot = respuestaIA,
+                    FechaTriaje = DateTime.Now
+                });
+
+                await _context.SaveChangesAsync();
+
+                return Ok(new
+                {
+                    exito = true,
+                    idConversacion = conversacion.IdConversacion,
+                    remitente = "IA",
+                    respuesta = respuestaIA,
+                    nivelPrioridad = prioridad
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error al procesar el mensaje del chatbot.");
+                return StatusCode(500, new
+                {
+                    exito = false,
+                    mensaje = "Ocurrió un error al procesar la solicitud."
+                });
+            }
+        }
+
+        private static string ObtenerPrioridad(string respuesta)
+        {
+            if (Regex.IsMatch(respuesta, @"\b(urgencia|urgente|emergencia)\b", RegexOptions.IgnoreCase))
+                return "Urgencia";
+
+            if (Regex.IsMatch(respuesta, @"\b(alta|alto)\b", RegexOptions.IgnoreCase))
+                return "Alta";
+
+            return "Baja";
+        }
+
+        public class ChatRequestDto
+        {
+            public string Mensaje { get; set; } = null!;
+            public int? IdConversacion { get; set; }
+            public int? IdPaciente { get; set; }
+            public string? IdentificadorUsuario { get; set; }
+        }
+    }
+}

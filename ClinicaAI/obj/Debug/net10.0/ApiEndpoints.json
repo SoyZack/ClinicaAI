@@ -1,0 +1,86 @@
+[
+  {
+    "ContainingType": "ClinicaAI.Controllers.CitasApiController",
+    "Method": "CrearCita",
+    "RelativePath": "api/CitasApi/Crear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nuevaCita",
+        "Type": "ClinicaAI.Models.DB.Cita",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicaAI.Controllers.CitasApiController",
+    "Method": "ListarCitas",
+    "RelativePath": "api/CitasApi/Listar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicaAI.Controllers.ConsultasApiController",
+    "Method": "ListarConsultas",
+    "RelativePath": "api/ConsultasApi/Listar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicaAI.Controllers.ConsultasApiController",
+    "Method": "ConsultasPorPaciente",
+    "RelativePath": "api/ConsultasApi/Paciente/{idPaciente}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPaciente",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicaAI.Controllers.ConsultasApiController",
+    "Method": "RegistrarConsulta",
+    "RelativePath": "api/ConsultasApi/Registrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nuevaConsulta",
+        "Type": "ClinicaAI.Models.DB.TriajesChatbot",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClinicaAI.Controllers.IaChatController",
+    "Method": "PreguntarAIChat",
+    "RelativePath": "api/IaChat/Preguntar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ClinicaAI.Controllers.IaChatController\u002BChatRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

@@ -1,0 +1,15 @@
+﻿{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "GeminiSettings": {
+    "Model": "gemini-3.8-flash"
+  },
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=bermudez; Database=ClinicaAI; Trusted_Connection=True; TrustServerCertificate=True;"
+  }
+}

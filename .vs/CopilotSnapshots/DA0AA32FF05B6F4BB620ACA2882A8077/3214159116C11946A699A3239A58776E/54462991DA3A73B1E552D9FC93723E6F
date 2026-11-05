@@ -1,0 +1,70 @@
+﻿using Newtonsoft.Json;
+using RestSharp;
+
+public class GeminiIaService
+{
+    private readonly string _apiKey;
+    private readonly string _model;
+
+    public GeminiIaService(IConfiguration configuration)
+    {
+        _apiKey = configuration["GeminiSettings:ApiKey"] ?? "";
+        _model = configuration["GeminiSettings:Model"] ?? "gemini-2.5-flash";
+    }
+
+    public async Task<string> ObtenerRespuestaTriajeAsync(string mensajePaciente)
+    {
+        try
+        {
+            if (string.IsNullOrWhiteSpace(_apiKey))
+            {
+                return "El servicio de IA no está configurado todavía. Intenta nuevamente más tarde.";
+            }
+
+            // URL de la API de Google Gemini v1beta
+            var url = $"https://generativelanguage.googleapis.com/v1beta/models/{_model}:generateContent?key={_apiKey}";
+            var client = new RestClient();
+            var request = new RestRequest(url, Method.Post);
+            request.AddHeader("Content-Type", "application/json");
+
+            // Configurar el System Prompt estricto y el mensaje del usuario
+            var payload = new
+            {
+                system_instruction = new
+                {
+                    parts = new[]
+                    {
+                        new { text = "Eres el asistente virtual de triaje médico de CliniAI. Tu función es evaluar síntomas, clasificar la prioridad (Baja, Alta, Urgencia) y sugerir la especialidad adecuada. Si el paciente pregunta algo no relacionado con salud o medicina, niégate amablemente." }
+                    }
+                },
+                contents = new[]
+                {
+                    new
+                    {
+                        parts = new[]
+                        {
+                            new { text = mensajePaciente }
+                        }
+                    }
+                }
+            };
+
+            request.AddJsonBody(payload);
+
+            var response = await client.ExecuteAsync(request);
+
+            if (response.IsSuccessful && response.Content != null)
+            {
+                dynamic resultado = JsonConvert.DeserializeObject(response.Content)!;
+                string textoRespuesta = resultado.candidates[0].content.parts[0].text;
+                return textoRespuesta;
+            }
+
+            return "Lo siento, hubo un problema al procesar tu consulta con la IA. Intenta nuevamente.";
+        }
+        catch
+        {
+            return "No fue posible conectar con el servicio de IA. Intenta nuevamente más tarde.";
+        }
+    }
+}

@@ -1,12 +1,14 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ClinicaAI.Models.DB; 
+using Microsoft.AspNetCore.Authorization;
 
 namespace ClinicaAI.Controllers
 {
 
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Administrador,Médico")]
     public class ConsultasApiController : ControllerBase
     {
         private readonly ClinicaAiContext _context;

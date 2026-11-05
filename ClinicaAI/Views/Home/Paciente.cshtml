@@ -1,0 +1,64 @@
+@model ClinicaAI.Models.ViewModels.HomePacienteViewModel
+@{
+    ViewData["Title"] = "Inicio";
+    var nombre = Model.Paciente is null
+        ? (User.Identity?.Name ?? "Paciente")
+        : $"{Model.Paciente.Nombre} {Model.Paciente.Apellido}";
+}
+
+<section class="welcome">
+    <div>
+        <h1>¡Hola, @nombre!</h1>
+        <p>Consulta tus próximas citas.</p>
+    </div>
+    <span class="fecha">@DateTime.Now.ToString("dddd, dd 'de' MMMM 'de' yyyy", new System.Globalization.CultureInfo("es-SV"))</span>
+</section>
+
+<section class="card">
+    <div class="card-header">
+        <h2>Próximas citas</h2>
+    </div>
+
+    @if (Model.Paciente is null)
+    {
+        <div class="vacio">
+            <p>Tu cuenta no está vinculada a un registro de paciente.</p>
+            <p>Pide a recepción que registre tu correo electrónico.</p>
+        </div>
+    }
+    else if (Model.ProximasCitas.Count == 0)
+    {
+        <div class="vacio">
+            <p>No hay citas próximas para mostrar.</p>
+        </div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table align-middle">
+                <caption class="visually-hidden">Próximas citas</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Fecha y hora</th>
+                        <th scope="col">Médico</th>
+                        <th scope="col">Especialidad</th>
+                        <th scope="col">Motivo</th>
+                        <th scope="col">Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                @foreach (var cita in Model.ProximasCitas)
+                {
+                    <tr>
+                        <td>@cita.FechaHora.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td>@cita.IdMedicoNavigation.Nombre @cita.IdMedicoNavigation.Apellido</td>
+                        <td>@cita.IdMedicoNavigation.IdEspecialidadNavigation.Nombre</td>
+                        <td>@(cita.MotivoConsulta ?? "—")</td>
+                        <td><span class="status">@cita.Estado</span></td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+    }
+</section>

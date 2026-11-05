@@ -1,0 +1,16 @@
+@model ClinicaAI.Models.ViewModels.PacienteForm
+@{
+    ViewData["Title"] = Model.IdPaciente == 0 ? "Registrar paciente" : "Editar paciente";
+}
+<div class="page-heading"><div><p class="eyebrow">Pacientes</p><h1>@ViewData["Title"]</h1><p>Completa la información y guarda los cambios.</p></div><a asp-action="Index" class="btn btn-outline-secondary">Volver al listado</a></div>
+<section class="surface form-surface">
+    <form asp-action="Guardar" method="post">
+        <input asp-for="IdPaciente" type="hidden" />
+        <div asp-validation-summary="All" class="text-danger" role="alert"></div>
+        <div class="form-grid"><div class="form-group"><label asp-for="Nombre"></label><input asp-for="Nombre" class="form-control" maxlength="100" /><span asp-validation-for="Nombre" class="text-danger"></span></div><div class="form-group"><label asp-for="Apellido"></label><input asp-for="Apellido" class="form-control" maxlength="100" /><span asp-validation-for="Apellido" class="text-danger"></span></div><div class="form-group"><label asp-for="DocumentoIdentidad"></label><input asp-for="DocumentoIdentidad" class="form-control" maxlength="10" inputmode="numeric" data-format="dui" /><span asp-validation-for="DocumentoIdentidad" class="text-danger"></span></div><div class="form-group"><label asp-for="Telefono"></label><input asp-for="Telefono" class="form-control" maxlength="9" inputmode="numeric" data-format="telefono" /><span asp-validation-for="Telefono" class="text-danger"></span></div><div class="form-group"><label asp-for="Email"></label><input asp-for="Email" type="email" class="form-control" maxlength="256" placeholder="correo@ejemplo.com" /><small class="d-block text-muted">Use el mismo correo con el que el paciente inicia sesión.</small><span asp-validation-for="Email" class="text-danger"></span></div><div class="form-group"><label asp-for="FechaNacimiento"></label><input asp-for="FechaNacimiento" type="date" class="form-control" /><span asp-validation-for="FechaNacimiento" class="text-danger"></span></div><div class="form-group"><label asp-for="Genero"></label><select asp-for="Genero" class="form-select"><option value="">Sin especificar</option><option value="F">Femenino</option><option value="M">Masculino</option><option value="O">Otro</option></select><span asp-validation-for="Genero" class="text-danger"></span></div></div>
+        <div class="form-actions"><button class="btn btn-primary" type="submit">Guardar paciente</button><a asp-action="Index" class="btn btn-outline-secondary">Cancelar</a></div>
+    </form>
+</section>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

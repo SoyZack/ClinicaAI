@@ -1,0 +1,62 @@
+@model IReadOnlyList<ClinicaAI.Models.DB.Especialidade>
+@{
+    ViewData["Title"] = "Especialidades";
+}
+<div class="page-heading">
+    <div><p class="eyebrow">Gestión clínica</p><h1>Especialidades</h1><p>Catálogo de especialidades disponibles para los médicos.</p></div>
+    <div class="actions">
+        <a asp-action="Crear" class="btn btn-primary">+ Nueva especialidad</a>
+        <a asp-controller="Medicos" asp-action="Index" class="btn btn-outline-secondary">Volver a médicos</a>
+    </div>
+</div>
+<section class="surface">
+    @if (TempData["Exito"] != null)
+    {
+        <div class="alert alert-success" role="status">@TempData["Exito"]</div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger" role="alert">@TempData["Error"]</div>
+    }
+    <form method="get" class="filter-bar">
+        <label for="buscar" class="visually-hidden">Buscar</label>
+        <input id="buscar" name="buscar" value="@ViewData["Buscar"]" class="form-control" placeholder="Buscar por nombre o descripción…" />
+        <button class="btn btn-primary" type="submit">Buscar</button>
+        <a asp-action="Index" class="btn btn-outline-secondary">Limpiar</a>
+    </form>
+    <p class="result-count">@Model.Count registro(s)</p>
+    @if (Model.Count == 0)
+    {
+        <div class="empty-state"><h2>Sin especialidades para mostrar</h2><p>Registra la primera especialidad para poder asignarla a los médicos.</p></div>
+    }
+    else
+    {
+        <div class="table-responsive">
+            <table class="table align-middle">
+                <caption class="visually-hidden">Especialidades</caption>
+                <thead><tr><th scope="col">Nombre</th><th scope="col">Descripción</th><th scope="col">Médicos</th><th scope="col">Acciones</th></tr></thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td><strong>@item.Nombre</strong></td>
+                            <td>@(string.IsNullOrWhiteSpace(item.Descripcion) ? "—" : item.Descripcion)</td>
+                            <td><span class="status">@item.Medicos.Count</span></td>
+                            <td>
+                                <div class="actions">
+                                    <a asp-action="Editar" asp-route-id="@item.IdEspecialidad" class="btn btn-sm btn-outline-primary">Editar</a>
+                                    @if (item.Medicos.Count == 0)
+                                    {
+                                        <form asp-action="Eliminar" asp-route-id="@item.IdEspecialidad" method="post" onsubmit="return confirm('¿Eliminar esta especialidad?');">
+                                            <button type="submit" class="btn btn-sm btn-outline-danger">Eliminar</button>
+                                        </form>
+                                    }
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</section>

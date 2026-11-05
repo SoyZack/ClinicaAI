@@ -235,6 +235,8 @@ public partial class ClinicaAiContext : IdentityDbContext<IdentityUser>
 
             entity.HasIndex(e => e.Telefono, "UQ__paciente__2A16D9456563CD0B").IsUnique();
 
+            entity.HasIndex(e => e.Email, "UX_pacientes_email").IsUnique().HasFilter("[email] IS NOT NULL");
+
             entity.Property(e => e.IdPaciente).HasColumnName("id_paciente");
             entity.Property(e => e.Apellido)
                 .HasMaxLength(100)
@@ -262,6 +264,10 @@ public partial class ClinicaAiContext : IdentityDbContext<IdentityUser>
                 .HasMaxLength(20)
                 .IsUnicode(false)
                 .HasColumnName("telefono");
+            entity.Property(e => e.Email)
+                .HasMaxLength(256)
+                .IsUnicode(false)
+                .HasColumnName("email");
         });
 
         modelBuilder.Entity<PreguntasFrecuentesFaq>(entity =>

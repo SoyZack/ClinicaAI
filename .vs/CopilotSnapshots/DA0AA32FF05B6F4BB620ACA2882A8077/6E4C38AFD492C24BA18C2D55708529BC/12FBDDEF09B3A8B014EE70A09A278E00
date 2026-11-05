@@ -1,0 +1,66 @@
+﻿@{
+    ViewData["Title"] = "Chatbot de Triaje";
+}
+
+<div class="max-w-2xl mx-auto h-[600px] flex flex-col justify-between p-4 bg-slate-100 rounded-lg shadow mt-4">
+
+    <!-- Encabezado -->
+    <div class="bg-blue-700 text-white p-4 rounded-t-lg shadow-md flex justify-between items-center">
+        <h1 class="font-bold text-lg">🤖 Asistente de Triaje CliniAI</h1>
+        <span class="text-xs bg-blue-800 px-2 py-1 rounded">En línea</span>
+    </div>
+
+    <!-- Caja de Mensajes -->
+    <div id="chatBox" class="bg-white flex-1 p-4 overflow-y-auto space-y-3 shadow-inner">
+        <div class="bg-blue-50 text-blue-900 p-3 rounded-lg max-w-md">
+            Hola, soy tu asistente de triaje. ¿Qué síntomas o molestias presentas hoy?
+        </div>
+    </div>
+
+    <!-- Formulario de Envío -->
+    <div class="bg-white p-3 rounded-b-lg border-t flex gap-2">
+        <input type="text" id="mensajeInput" placeholder="Escribe tus síntomas..."
+               class="flex-1 border rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600"
+               onkeypress="if(event.key === 'Enter') enviarMensaje()">
+        <button onclick="enviarMensaje()" class="bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-lg font-semibold text-sm">
+            Enviar
+        </button>
+    </div>
+</div>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    async function enviarMensaje() {
+        const input = document.getElementById('mensajeInput');
+        const chatBox = document.getElementById('chatBox');
+        const mensaje = input.value.trim();
+
+        if (!mensaje) return;
+
+        // Mostrar mensaje del usuario
+        chatBox.innerHTML += `<div class="bg-gray-200 text-gray-800 p-3 rounded-lg max-w-md ml-auto text-right">${mensaje}</div>`;
+        input.value = '';
+        chatBox.scrollTop = chatBox.scrollHeight;
+
+        try {
+            // Llama a tu IaChatController
+            const response = await fetch('/api/IaChat/Preguntar', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ mensaje: mensaje })
+            });
+
+            const data = await response.json();
+
+            if (data.exito) {
+                chatBox.innerHTML += `<div class="bg-blue-50 text-blue-900 p-3 rounded-lg max-w-md">${data.respuesta}</div>`;
+            } else {
+                chatBox.innerHTML += `<div class="bg-red-50 text-red-700 p-3 rounded-lg max-w-md">Error: ${data.mensaje}</div>`;
+            }
+        } catch (err) {
+            chatBox.innerHTML += `<div class="bg-red-50 text-red-700 p-3 rounded-lg max-w-md">Error de conexión con el servidor.</div>`;
+        }
+
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+</script>

@@ -1,0 +1,110 @@
+@{
+    ViewData["Title"] = "Chatbot de triaje";
+}
+
+<section class="chat-shell" aria-label="Chatbot de triaje médico">
+    <header class="chat-header">
+        <div>
+            <p class="eyebrow">Atención inicial</p>
+            <h1>Asistente de triaje CliniAI</h1>
+            <p>Describe tus síntomas para recibir una orientación inicial.</p>
+        </div>
+        <span class="chat-status"><span></span> Asistente IA</span>
+    </header>
+
+    <div id="demoNotice" class="chat-message chat-message-error" role="status" hidden>
+        Modo demostración activo: si Gemini no está disponible, se mostrará una respuesta de ejemplo, no una valoración médica.
+    </div>
+
+    <div id="chatBox" class="chat-messages" aria-live="polite">
+        <div class="chat-message chat-message-ai">
+            Hola, soy tu asistente de triaje. ¿Qué síntomas o molestias presentas hoy?
+        </div>
+    </div>
+
+    <form id="chatForm" class="chat-composer">
+        <label class="visually-hidden" for="mensajeInput">Describe tus síntomas</label>
+        <input type="text" id="mensajeInput" class="form-control" maxlength="2000"
+               placeholder="Escribe tus síntomas..." autocomplete="off" required />
+        <button id="enviarButton" type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    <p class="chat-disclaimer">La orientación de la IA no sustituye una valoración médica profesional.</p>
+</section>
+
+@section Scripts {
+<script>
+    (() => {
+        const form = document.getElementById('chatForm');
+        const input = document.getElementById('mensajeInput');
+        const chatBox = document.getElementById('chatBox');
+        const button = document.getElementById('enviarButton');
+        const demoNotice = document.getElementById('demoNotice');
+        const storageKey = 'clinicaai.conversacionId';
+
+        function agregarMensaje(texto, tipo, prioridad, especialidad) {
+            const mensaje = document.createElement('div');
+            mensaje.className = `chat-message chat-message-${tipo}`;
+            mensaje.textContent = texto;
+
+            if (prioridad) {
+                const etiqueta = document.createElement('span');
+                etiqueta.className = 'chat-priority';
+                etiqueta.textContent = `Prioridad detectada: ${prioridad}`;
+                mensaje.appendChild(etiqueta);
+            }
+
+            if (especialidad && especialidad.toLowerCase() !== 'no aplica') {
+                const etiqueta = document.createElement('span');
+                etiqueta.className = 'chat-priority';
+                etiqueta.textContent = `Especialidad sugerida: ${especialidad}`;
+                mensaje.appendChild(etiqueta);
+            }
+
+            chatBox.appendChild(mensaje);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const mensaje = input.value.trim();
+            if (!mensaje || button.disabled) return;
+
+            agregarMensaje(mensaje, 'user');
+            input.value = '';
+            button.disabled = true;
+            button.textContent = 'Enviando...';
+
+            const idGuardado = Number.parseInt(localStorage.getItem(storageKey) || '', 10);
+            const payload = { mensaje };
+            if (Number.isInteger(idGuardado) && idGuardado > 0) {
+                payload.idConversacion = idGuardado;
+            }
+
+            try {
+                const response = await fetch('/api/IaChat/Preguntar', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+                const data = await response.json();
+
+                if (!response.ok || !data.exito) {
+                    throw new Error(data.mensaje || 'No se pudo procesar el mensaje.');
+                }
+
+                localStorage.setItem(storageKey, data.idConversacion);
+                if (data.esDemostracion) {
+                    demoNotice.hidden = false;
+                }
+                agregarMensaje(data.respuesta, 'ai', data.nivelPrioridad, data.especialidad);
+            } catch (error) {
+                agregarMensaje(error.message || 'Error de conexión con el servidor.', 'error');
+            } finally {
+                button.disabled = false;
+                button.textContent = 'Enviar';
+                input.focus();
+            }
+        });
+    })();
+</script>
+}

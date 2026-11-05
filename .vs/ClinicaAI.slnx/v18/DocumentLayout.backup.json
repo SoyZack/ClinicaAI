@@ -3,6 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\services\\geminaiiaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\services\\geminaiiaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Uptim\\.copilot\\plans\\plan-aadir-respaldo-de-demostracin-al-chatbot.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Uptim\\.copilot\\plans\\plan-diagnosticar-la-integracin-actual-con-gemini.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Uptim\\.copilot\\plans\\plan-corregir-modelo-gemini-que-persiste-en-1.5-flash.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\controllers\\iachatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\controllers\\iachatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\controllers\\pacientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\controllers\\pacientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,24 +36,84 @@
       "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\controllers\\medicoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\controllers\\citasapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\controllers\\citasapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\controllers\\consultasapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\controllers\\consultasapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\models\\viewmodels\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\models\\viewmodels\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Uptim\\.copilot\\plans\\plan-diagnosticar-y-corregir-conexin-de-gemini.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Uptim\\.copilot\\plans\\plan-integrar-chatbot-de-paciente-y-seguimiento-mdico.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Uptim\\.copilot\\plans\\plan-mejorar-el-diseo-css-de-la-aplicacin.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\data\\migrations\\20261029234639_identityinitial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\data\\migrations\\20261029234639_identityinitial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\controllers\\consultascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\controllers\\consultascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\views\\medicos\\notificacionesmedico.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\views\\medicos\\notificacionesmedico.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\views\\medicos\\formulario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\views\\medicos\\formulario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\views\\medicos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\views\\medicos\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\models\\db\\clinicaviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\models\\db\\clinicaviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Uptim\\.copilot\\plans\\plan-integrar-asp.net-core-identity.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}|MarkdownSecurePreview"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\data\\migrations\\clinicaaicontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\data\\migrations\\clinicaaicontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\controllers\\citasapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\controllers\\citasapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\models\\db\\clinicaaicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +126,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\requiredEdits.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -87,12 +168,8 @@
       "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\views\\shared\\_layoutauth.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\views\\account\\accessdenied.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|c:\\users\\uptim\\source\\repos\\clinicaai\\clinicaai\\views\\pacientes\\chatpaciente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC32FB91-6662-32F7-8932-0893FB0C79C3}|ClinicaAI\\ClinicaAI.csproj|solutionrelative:clinicaai\\views\\pacientes\\chatpaciente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,7 +183,134 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 2,
+              "Title": "plan-aadir-respaldo-de-demostracin-al-chatbot.md [Versi\u00F3n preliminar]",
+              "DocumentMoniker": "C:\\Users\\Uptim\\.copilot\\plans\\plan-aadir-respaldo-de-demostracin-al-chatbot.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-aadir-respaldo-de-demostracin-al-chatbot.md",
+              "ToolTip": "C:\\Users\\Uptim\\.copilot\\plans\\plan-aadir-respaldo-de-demostracin-al-chatbot.md [Versi\u00F3n preliminar]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-aadir-respaldo-de-demostracin-al-chatbot.md [Versi\u00F3n preliminar]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-05T04:42:16.504Z",
+              "EditorCaption": " [Versi\u00F3n preliminar]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "plan-diagnosticar-la-integracin-actual-con-gemini.md [Versi\u00F3n preliminar]",
+              "DocumentMoniker": "C:\\Users\\Uptim\\.copilot\\plans\\plan-diagnosticar-la-integracin-actual-con-gemini.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-diagnosticar-la-integracin-actual-con-gemini.md",
+              "ToolTip": "C:\\Users\\Uptim\\.copilot\\plans\\plan-diagnosticar-la-integracin-actual-con-gemini.md [Versi\u00F3n preliminar]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-diagnosticar-la-integracin-actual-con-gemini.md [Versi\u00F3n preliminar]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-05T04:27:43.07Z",
+              "EditorCaption": " [Versi\u00F3n preliminar]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GeminaiIaService.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Services\\GeminaiIaService.cs",
+              "RelativeDocumentMoniker": "ClinicaAI\\Services\\GeminaiIaService.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Services\\GeminaiIaService.cs",
+              "RelativeToolTip": "ClinicaAI\\Services\\GeminaiIaService.cs",
+              "ViewState": "AgIAAM4BAAAAAAAAAIA/wNkBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T23:42:57.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Program.cs",
+              "RelativeDocumentMoniker": "ClinicaAI\\Program.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Program.cs",
+              "RelativeToolTip": "ClinicaAI\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T03:50:51.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "plan-corregir-modelo-gemini-que-persiste-en-1.5-flash.md [Versi\u00F3n preliminar]",
+              "DocumentMoniker": "C:\\Users\\Uptim\\.copilot\\plans\\plan-corregir-modelo-gemini-que-persiste-en-1.5-flash.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-corregir-modelo-gemini-que-persiste-en-1.5-flash.md",
+              "ToolTip": "C:\\Users\\Uptim\\.copilot\\plans\\plan-corregir-modelo-gemini-que-persiste-en-1.5-flash.md [Versi\u00F3n preliminar]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-corregir-modelo-gemini-que-persiste-en-1.5-flash.md [Versi\u00F3n preliminar]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-05T04:18:20.164Z",
+              "EditorCaption": " [Versi\u00F3n preliminar]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ConsultasApiController.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\ConsultasApiController.cs",
+              "RelativeDocumentMoniker": "ClinicaAI\\Controllers\\ConsultasApiController.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\ConsultasApiController.cs",
+              "RelativeToolTip": "ClinicaAI\\Controllers\\ConsultasApiController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAIwBMAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T21:41:55.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\appsettings.json",
+              "RelativeDocumentMoniker": "ClinicaAI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\appsettings.json",
+              "RelativeToolTip": "ClinicaAI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-29T20:12:13.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IaChatController.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\IaChatController.cs",
+              "RelativeDocumentMoniker": "ClinicaAI\\Controllers\\IaChatController.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\IaChatController.cs",
+              "RelativeToolTip": "ClinicaAI\\Controllers\\IaChatController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAD4vwIBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T00:01:31.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PacientesController.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\PacientesController.cs",
+              "RelativeDocumentMoniker": "ClinicaAI\\Controllers\\PacientesController.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\PacientesController.cs",
+              "RelativeToolTip": "ClinicaAI\\Controllers\\PacientesController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwD0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T23:21:14.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MedicosController.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\MedicosController.cs",
+              "RelativeDocumentMoniker": "ClinicaAI\\Controllers\\MedicosController.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\MedicosController.cs",
+              "RelativeToolTip": "ClinicaAI\\Controllers\\MedicosController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T23:22:09.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "ClinicaAI\\Models\\ErrorViewModel.cs",
@@ -119,124 +323,211 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CitasApiController.cs",
-              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\CitasApiController.cs",
-              "RelativeDocumentMoniker": "ClinicaAI\\Controllers\\CitasApiController.cs",
-              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\CitasApiController.cs",
-              "RelativeToolTip": "ClinicaAI\\Controllers\\CitasApiController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T20:27:50.803Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MedicosController.cs",
-              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\MedicosController.cs",
-              "RelativeDocumentMoniker": "ClinicaAI\\Controllers\\MedicosController.cs",
-              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\MedicosController.cs",
-              "RelativeToolTip": "ClinicaAI\\Controllers\\MedicosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T23:22:09.597Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PacientesController.cs",
-              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\PacientesController.cs",
-              "RelativeDocumentMoniker": "ClinicaAI\\Controllers\\PacientesController.cs",
-              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\PacientesController.cs",
-              "RelativeToolTip": "ClinicaAI\\Controllers\\PacientesController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T23:21:14.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ConsultasApiController.cs",
-              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\ConsultasApiController.cs",
-              "RelativeDocumentMoniker": "ClinicaAI\\Controllers\\ConsultasApiController.cs",
-              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\ConsultasApiController.cs",
-              "RelativeToolTip": "ClinicaAI\\Controllers\\ConsultasApiController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T21:41:55.291Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "ClinicaAI\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "ClinicaAI\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T23:32:53.047Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "AccountViewModels.cs",
               "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Models\\ViewModels\\AccountViewModels.cs",
               "RelativeDocumentMoniker": "ClinicaAI\\Models\\ViewModels\\AccountViewModels.cs",
               "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Models\\ViewModels\\AccountViewModels.cs",
               "RelativeToolTip": "ClinicaAI\\Models\\ViewModels\\AccountViewModels.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAkwCwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-29T23:32:38.818Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "_LayoutAuth.cshtml",
-              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Shared\\_LayoutAuth.cshtml",
-              "RelativeDocumentMoniker": "ClinicaAI\\Views\\Shared\\_LayoutAuth.cshtml",
-              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Shared\\_LayoutAuth.cshtml",
-              "RelativeToolTip": "ClinicaAI\\Views\\Shared\\_LayoutAuth.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "plan-integrar-chatbot-de-paciente-y-seguimiento-mdico.md [Versi\u00F3n preliminar]",
+              "DocumentMoniker": "C:\\Users\\Uptim\\.copilot\\plans\\plan-integrar-chatbot-de-paciente-y-seguimiento-mdico.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-integrar-chatbot-de-paciente-y-seguimiento-mdico.md",
+              "ToolTip": "C:\\Users\\Uptim\\.copilot\\plans\\plan-integrar-chatbot-de-paciente-y-seguimiento-mdico.md [Versi\u00F3n preliminar]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-integrar-chatbot-de-paciente-y-seguimiento-mdico.md [Versi\u00F3n preliminar]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-05T01:38:35.44Z",
+              "EditorCaption": " [Versi\u00F3n preliminar]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "plan-diagnosticar-y-corregir-conexin-de-gemini.md [Versi\u00F3n preliminar]",
+              "DocumentMoniker": "C:\\Users\\Uptim\\.copilot\\plans\\plan-diagnosticar-y-corregir-conexin-de-gemini.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-diagnosticar-y-corregir-conexin-de-gemini.md",
+              "ToolTip": "C:\\Users\\Uptim\\.copilot\\plans\\plan-diagnosticar-y-corregir-conexin-de-gemini.md [Versi\u00F3n preliminar]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-diagnosticar-y-corregir-conexin-de-gemini.md [Versi\u00F3n preliminar]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-05T02:57:03.67Z",
+              "EditorCaption": " [Versi\u00F3n preliminar]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "plan-mejorar-el-diseo-css-de-la-aplicacin.md [Versi\u00F3n preliminar]",
+              "DocumentMoniker": "C:\\Users\\Uptim\\.copilot\\plans\\plan-mejorar-el-diseo-css-de-la-aplicacin.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-mejorar-el-diseo-css-de-la-aplicacin.md",
+              "ToolTip": "C:\\Users\\Uptim\\.copilot\\plans\\plan-mejorar-el-diseo-css-de-la-aplicacin.md [Versi\u00F3n preliminar]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-mejorar-el-diseo-css-de-la-aplicacin.md [Versi\u00F3n preliminar]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-11-05T01:26:32.295Z",
+              "EditorCaption": " [Versi\u00F3n preliminar]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ChatPaciente.cshtml",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Pacientes\\ChatPaciente.cshtml",
+              "RelativeDocumentMoniker": "ClinicaAI\\Views\\Pacientes\\ChatPaciente.cshtml",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Pacientes\\ChatPaciente.cshtml",
+              "RelativeToolTip": "ClinicaAI\\Views\\Pacientes\\ChatPaciente.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAACBjwG0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-29T23:33:41.2Z",
+              "WhenOpened": "2026-11-05T01:35:30.051Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Program.cs",
-              "RelativeDocumentMoniker": "ClinicaAI\\Program.cs",
-              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Program.cs",
-              "RelativeToolTip": "ClinicaAI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "ClinicaAI\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "ClinicaAI\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAGoAAAAAAAAAAADgvxYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-11-05T01:23:45.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20261029234639_IdentityInitial.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Data\\Migrations\\20261029234639_IdentityInitial.cs",
+              "RelativeDocumentMoniker": "ClinicaAI\\Data\\Migrations\\20261029234639_IdentityInitial.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Data\\Migrations\\20261029234639_IdentityInitial.cs",
+              "RelativeToolTip": "ClinicaAI\\Data\\Migrations\\20261029234639_IdentityInitial.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAuwI4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T03:50:51.589Z",
+              "WhenOpened": "2026-11-05T01:03:17.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ClinicaAI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ClinicaAI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABcAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-05T00:43:57.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ConsultasController.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\ConsultasController.cs",
+              "RelativeDocumentMoniker": "ClinicaAI\\Controllers\\ConsultasController.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\ConsultasController.cs",
+              "RelativeToolTip": "ClinicaAI\\Controllers\\ConsultasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T00:59:09.814Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "ClinicaAI\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "ClinicaAI\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAEAAAAAAAAAAIBJwAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-29T23:33:27.353Z",
+              "Title": "CitasController.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\CitasController.cs",
+              "RelativeDocumentMoniker": "ClinicaAI\\Controllers\\CitasController.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\CitasController.cs",
+              "RelativeToolTip": "ClinicaAI\\Controllers\\CitasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T00:59:03.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "ClinicaAI\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "ClinicaAI\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T00:58:52.704Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
+              "Title": "NotificacionesMedico.cshtml",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Medicos\\NotificacionesMedico.cshtml",
+              "RelativeDocumentMoniker": "ClinicaAI\\Views\\Medicos\\NotificacionesMedico.cshtml",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Medicos\\NotificacionesMedico.cshtml",
+              "RelativeToolTip": "ClinicaAI\\Views\\Medicos\\NotificacionesMedico.cshtml",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAtwD8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-05T00:48:31.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Formulario.cshtml",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Medicos\\Formulario.cshtml",
+              "RelativeDocumentMoniker": "ClinicaAI\\Views\\Medicos\\Formulario.cshtml",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Medicos\\Formulario.cshtml",
+              "RelativeToolTip": "ClinicaAI\\Views\\Medicos\\Formulario.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-05T00:48:38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Medicos\\Index.cshtml",
+              "RelativeDocumentMoniker": "ClinicaAI\\Views\\Medicos\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Medicos\\Index.cshtml",
+              "RelativeToolTip": "ClinicaAI\\Views\\Medicos\\Index.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-11-05T00:48:39.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ClinicaViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Models\\DB\\ClinicaViewModels.cs",
+              "RelativeDocumentMoniker": "ClinicaAI\\Models\\DB\\ClinicaViewModels.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Models\\DB\\ClinicaViewModels.cs",
+              "RelativeToolTip": "ClinicaAI\\Models\\DB\\ClinicaViewModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-05T00:36:49.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "plan-integrar-asp.net-core-identity.md [Versi\u00F3n preliminar]",
+              "DocumentMoniker": "C:\\Users\\Uptim\\.copilot\\plans\\plan-integrar-asp.net-core-identity.md",
+              "RelativeDocumentMoniker": "..\\..\\..\\.copilot\\plans\\plan-integrar-asp.net-core-identity.md",
+              "ToolTip": "C:\\Users\\Uptim\\.copilot\\plans\\plan-integrar-asp.net-core-identity.md [Versi\u00F3n preliminar]",
+              "RelativeToolTip": "..\\..\\..\\.copilot\\plans\\plan-integrar-asp.net-core-identity.md [Versi\u00F3n preliminar]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2026-10-29T23:47:41.797Z",
+              "EditorCaption": " [Versi\u00F3n preliminar]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "AccessDenied.cshtml",
               "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Account\\AccessDenied.cshtml",
               "RelativeDocumentMoniker": "ClinicaAI\\Views\\Account\\AccessDenied.cshtml",
@@ -249,7 +540,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 27,
+              "Title": "ClinicaAiContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Data\\Migrations\\ClinicaAiContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "ClinicaAI\\Data\\Migrations\\ClinicaAiContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Data\\Migrations\\ClinicaAiContextModelSnapshot.cs",
+              "RelativeToolTip": "ClinicaAI\\Data\\Migrations\\ClinicaAiContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T23:49:42.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "CitasApiController.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\CitasApiController.cs",
+              "RelativeDocumentMoniker": "ClinicaAI\\Controllers\\CitasApiController.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\CitasApiController.cs",
+              "RelativeToolTip": "ClinicaAI\\Controllers\\CitasApiController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T20:27:50.803Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "ClinicaAI\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "ClinicaAI\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T23:32:53.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "_LayoutAuth.cshtml",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Shared\\_LayoutAuth.cshtml",
+              "RelativeDocumentMoniker": "ClinicaAI\\Views\\Shared\\_LayoutAuth.cshtml",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Shared\\_LayoutAuth.cshtml",
+              "RelativeToolTip": "ClinicaAI\\Views\\Shared\\_LayoutAuth.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-29T23:33:41.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "ClinicaAI\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "ClinicaAI\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAIBJwAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-29T23:33:27.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "ClinicaAI\\Views\\Account\\Register.cshtml",
@@ -257,12 +608,11 @@
               "RelativeToolTip": "ClinicaAI\\Views\\Account\\Register.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-29T23:14:24.168Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-29T23:14:24.168Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 30,
               "Title": "ClinicaAiContext.cs",
               "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Models\\DB\\ClinicaAiContext.cs",
               "RelativeDocumentMoniker": "ClinicaAI\\Models\\DB\\ClinicaAiContext.cs",
@@ -270,12 +620,11 @@
               "RelativeToolTip": "ClinicaAI\\Models\\DB\\ClinicaAiContext.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAiwCUAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-29T05:24:48.13Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-29T05:24:48.13Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 32,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "ClinicaAI\\Views\\Home\\Index.cshtml",
@@ -283,25 +632,11 @@
               "RelativeToolTip": "ClinicaAI\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-29T23:14:16.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-29T23:14:16.014Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\appsettings.json",
-              "RelativeDocumentMoniker": "ClinicaAI\\appsettings.json",
-              "ToolTip": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\appsettings.json",
-              "RelativeToolTip": "ClinicaAI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-10-29T20:12:13.563Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 37,
               "Title": "CanalesComunicacion.cs",
               "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Models\\DB\\CanalesComunicacion.cs",
               "RelativeDocumentMoniker": "ClinicaAI\\Models\\DB\\CanalesComunicacion.cs",
@@ -313,7 +648,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 36,
               "Title": "Cita.cs",
               "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Models\\DB\\Cita.cs",
               "RelativeDocumentMoniker": "ClinicaAI\\Models\\DB\\Cita.cs",
@@ -325,7 +660,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 38,
               "Title": "Medico.cs",
               "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Models\\DB\\Medico.cs",
               "RelativeDocumentMoniker": "ClinicaAI\\Models\\DB\\Medico.cs",
@@ -337,7 +672,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 35,
               "Title": "Conversacione.cs",
               "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Models\\DB\\Conversacione.cs",
               "RelativeDocumentMoniker": "ClinicaAI\\Models\\DB\\Conversacione.cs",
@@ -349,7 +684,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 34,
               "Title": "Especialidade.cs",
               "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Models\\DB\\Especialidade.cs",
               "RelativeDocumentMoniker": "ClinicaAI\\Models\\DB\\Especialidade.cs",
@@ -361,7 +696,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 39,
               "Title": "TriajesChatbot.cs",
               "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\Models\\DB\\TriajesChatbot.cs",
               "RelativeDocumentMoniker": "ClinicaAI\\Models\\DB\\TriajesChatbot.cs",
@@ -373,7 +708,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 40,
               "Title": "ClinicaAI.csproj",
               "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\ClinicaAI\\ClinicaAI.csproj",
               "RelativeDocumentMoniker": "ClinicaAI\\ClinicaAI.csproj",
@@ -385,7 +720,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 33,
               "Title": "requiredEdits.json",
               "DocumentMoniker": "C:\\Users\\Uptim\\source\\repos\\ClinicaAI\\requiredEdits.json",
               "RelativeDocumentMoniker": "requiredEdits.json",

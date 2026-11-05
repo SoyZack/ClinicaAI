@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("938f083f-cf9f-4c7b-a581-9d1c9dc22d65")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClinicaAI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97a73b4f0b31d1ecffd542dad97ad34fa74963f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClinicaAI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClinicaAI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

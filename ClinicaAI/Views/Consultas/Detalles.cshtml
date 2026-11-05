@@ -1,0 +1,14 @@
+@model ClinicaAI.Models.DB.TriajesChatbot
+@{
+    ViewData["Title"] = "Detalle de consulta";
+}
+<div class="page-heading"><div><p class="eyebrow">Historial de atención</p><h1>Consulta #@Model.IdTriaje</h1><p>@(Model.FechaTriaje?.ToString("dd/MM/yyyy HH:mm") ?? "Fecha no registrada")</p></div><a asp-action="Index" class="btn btn-outline-secondary">Volver al historial</a></div>
+<section class="surface detail-panel">
+    <dl class="detail-grid"><div><dt>Paciente</dt><dd>@(Model.IdPacienteNavigation == null ? "Paciente no registrado" : Model.IdPacienteNavigation.Nombre + " " + Model.IdPacienteNavigation.Apellido)</dd></div><div><dt>Prioridad registrada</dt><dd><span class="status">@(Model.NivelPrioridad ?? "Sin clasificar")</span></dd></div><div><dt>Conversación de origen</dt><dd>#@Model.IdConversacion</dd></div></dl>
+    <h2>Síntomas reportados</h2><p class="preserve-lines">@Model.SintomasReportados</p>
+    <h2>Recomendación registrada por el chatbot</h2><p class="preserve-lines">@(Model.RecomendacionBot ?? "No se registró una recomendación.")</p>
+    @if (Model.IdPaciente.HasValue)
+    {
+        <a asp-action="Index" asp-route-idPaciente="@Model.IdPaciente" class="btn btn-outline-primary">Ver historial del paciente</a>
+    }
+</section>

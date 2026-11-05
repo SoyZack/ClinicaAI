@@ -1,0 +1,57 @@
+﻿@{
+    ViewData["Title"] = "Notificaciones de Triaje";
+}
+
+<div class="max-w-4xl mx-auto bg-white rounded-lg shadow p-6 mt-6">
+    <div class="flex justify-between items-center border-b pb-4 mb-4">
+        <h2 class="text-xl font-bold text-slate-800">📋 Notificaciones de Triaje Recibidas</h2>
+        <button onclick="cargarNotificaciones()" class="text-sm bg-blue-100 text-blue-700 px-3 py-1 rounded font-semibold hover:bg-blue-200">
+            🔄 Actualizar
+        </button>
+    </div>
+
+    <!-- Lista dinámicamente poblada -->
+    <div id="listaNotificaciones" class="space-y-4">
+        <p class="text-gray-500 text-sm text-center py-4">Cargando notificaciones...</p>
+    </div>
+</div>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    async function cargarNotificaciones() {
+        const contenedor = document.getElementById('listaNotificaciones');
+
+        try {
+            // Llama a tu ConsultasApiController
+            const response = await fetch('/api/ConsultasApi/Listar');
+            const triajes = await response.json();
+
+            if (!triajes || triajes.length === 0) {
+                contenedor.innerHTML = `<p class="text-gray-500 text-sm text-center py-4">No hay notificaciones de triaje pendientes.</p>`;
+                return;
+            }
+
+            contenedor.innerHTML = triajes.map(t => `
+                    <div class="border-l-4 border-red-500 bg-red-50 p-4 rounded shadow-sm flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="bg-red-600 text-white text-xs font-bold px-2 py-0.5 rounded">Prioridad: ${t.nivelPrioridad || 'Alta'}</span>
+                                <h3 class="font-bold text-gray-800">${t.paciente}</h3>
+                                <span class="text-xs text-gray-500">📞 ${t.telefono}</span>
+                            </div>
+                            <p class="text-sm text-gray-700 mt-1"><strong>Síntomas:</strong> ${t.sintomasReportados || 'No especificados'}</p>
+                            <p class="text-xs text-gray-600 mt-1"><strong>Evaluación IA:</strong> ${t.recomendacionBot || 'Triaje generado por el asistente'}</p>
+                        </div>
+                        <button class="bg-blue-700 hover:bg-blue-800 text-white text-xs px-3 py-2 rounded font-semibold whitespace-nowrap">
+                            Atender Paciente
+                        </button>
+                    </div>
+                `).join('');
+
+        } catch (err) {
+            contenedor.innerHTML = `<p class="text-red-500 text-sm">Error al cargar notificaciones.</p>`;
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', cargarNotificaciones);
+</script>

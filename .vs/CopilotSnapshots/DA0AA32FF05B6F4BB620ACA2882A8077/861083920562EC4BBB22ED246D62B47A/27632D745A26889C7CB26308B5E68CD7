@@ -1,0 +1,111 @@
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using RestSharp;
+
+namespace ClinicaAI.Services;
+
+public class GeminiIaService
+{
+    private readonly string _apiKey;
+    private readonly string _model;
+    private readonly ILogger<GeminiIaService> _logger;
+
+    public GeminiIaService(IConfiguration configuration, ILogger<GeminiIaService> logger)
+    {
+        _apiKey = configuration["GeminiSettings:ApiKey"] ?? "";
+        _model = configuration["GeminiSettings:Model"] ?? "gemini-2.5-flash";
+        _logger = logger;
+    }
+
+    public async Task<string> ObtenerRespuestaTriajeAsync(string mensajePaciente)
+    {
+        if (string.IsNullOrWhiteSpace(_apiKey))
+        {
+            throw new GeminiIaException(null, "No se ha cargado GeminiSettings:ApiKey.");
+        }
+
+        try
+        {
+            var url = $"https://generativelanguage.googleapis.com/v1beta/models/{_model}:generateContent?key={_apiKey}";
+            var client = new RestClient();
+            var request = new RestRequest(url, Method.Post);
+            request.AddHeader("Content-Type", "application/json");
+            request.AddHeader("x-goog-api-key", _apiKey);
+
+            // Configurar el System Prompt estricto y el mensaje del usuario
+            var payload = new
+            {
+                system_instruction = new
+                {
+                    parts = new[]
+                    {
+                        new { text = "Eres el asistente virtual de triaje médico de CliniAI. Tu función es evaluar síntomas, clasificar la prioridad (Baja, Alta, Urgencia) y sugerir la especialidad adecuada. Si el paciente pregunta algo no relacionado con salud o medicina, niégate amablemente." }
+                    }
+                },
+                contents = new[]
+                {
+                    new
+                    {
+                        parts = new[]
+                        {
+                            new { text = mensajePaciente }
+                        }
+                    }
+                }
+            };
+
+            request.AddJsonBody(payload);
+
+            var response = await client.ExecuteAsync(request);
+
+            if (response.IsSuccessful && response.Content != null)
+            {
+                dynamic resultado = JsonConvert.DeserializeObject(response.Content)!;
+                string textoRespuesta = resultado.candidates[0].content.parts[0].text;
+                return textoRespuesta;
+            }
+
+            var error = LeerErrorProveedor(response.Content);
+            _logger.LogWarning("Gemini devolvió HTTP {StatusCode}; estado {ProviderStatus}; mensaje {ProviderMessage}",
+                (int)response.StatusCode, error.Status, error.Message);
+            throw new GeminiIaException((int)response.StatusCode, error.Status);
+        }
+        catch (GeminiIaException)
+        {
+            throw;
+        }
+        catch (Exception ex)
+        {
+            _logger.LogError("Error de conexión con Gemini ({ExceptionType}): {Message}", ex.GetType().Name, ex.Message);
+            throw new GeminiIaException(null, null);
+        }
+    }
+
+    private static (string? Status, string? Message) LeerErrorProveedor(string? content)
+    {
+        if (string.IsNullOrWhiteSpace(content))
+            return (null, null);
+
+        try
+        {
+            var error = JObject.Parse(content)["error"];
+            return ((string?)error?["status"], (string?)error?["message"]);
+        }
+        catch (JsonException)
+        {
+            return (null, null);
+        }
+    }
+}
+
+public sealed class GeminiIaException : Exception
+{
+    public int? HttpStatusCode { get; }
+    public string? ProviderStatus { get; }
+
+    public GeminiIaException(int? httpStatusCode, string? providerStatus)
+    {
+        HttpStatusCode = httpStatusCode;
+        ProviderStatus = providerStatus;
+    }
+}
