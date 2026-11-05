@@ -13,9 +13,9 @@ Sistema de gestión clínica y triaje automatizado desarrollado con ASP.NET Core
 * **Base de datos:** SQL Server / MySQL.
 
 ## 👥 Equipo de Desarrollo
-*Miguel Bermudez
-*Steven Ortiz
-*Paris Escobar
-*Stanley Dominguez
-*Nayeli Guevara
+**Miguel Bermudez**
+**Steven Ortiz**
+**Paris Escobar**
+**Stanley Dominguez**
+**Nayeli Guevara**
 * Proyecto académico de la Universidad Don Bosco (UDB).
